@@ -1,8 +1,10 @@
+# import flask
 from flask import Flask
 
+# create app
 app = Flask(__name__)
 
-@app.route('/user')
-def root():
-  return("<h2> Hello World! </h2>")
+@app.route('/')
+def hello_world():
+  return   '<h1>Hello, World!!!</h1>'
     
